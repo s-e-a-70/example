@@ -199,13 +199,18 @@ void DrawBase(int xh, int yh, int xl, int yl)
    // POINT chee[4] = {{448, 407}, {448, 414}, {639, 407}, {639, 414}};
    // txPolygon (chee, 4);
 
+   txSetFillColor(RGB(126, 126, 126));
+   POINT che[4] = {{707, 269}, {719,277}, {639, 408}, {623, 408}};
+   txPolygon (che, 4);
+
+
     txSetFillColor (RGB(126, 126, 126));
 
 
 
 
-    POINT che[4]  = {{xh, yh},{xh, yh-5},{xl, yl-5}, {xl,yl}};
-    txPolygon (che,  4);
+    POINT cheR[4]  = {{xh, yh},{xh, yh-5},{xl, yl-5}, {xl,yl}};
+    txPolygon (cheR,  4);
 
 
 }
@@ -265,7 +270,7 @@ void MoveBase(int *xh, int *yh,int *xl, int *yl, int *fi, int t)
   int ah=17;
   int bh=5;
   int al=183;
-  int bl=50;
+  int bl=20;
 
 
   *fi=*fi+4;
